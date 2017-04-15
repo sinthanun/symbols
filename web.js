@@ -1,7 +1,7 @@
 var http = require('http');
 var url = require('url');
-var googleStocks = require('google-finance');
- 
+var googleStocks = require('google-stocks');
+
 var server = http.createServer(function (request, resp) {
     var headers = {};
     headers['Content-Type'] = 'application/json';
@@ -24,4 +24,3 @@ var port = process.env.PORT || 3000;
 server.listen(port, function() {
     console.log("Server running at http://127.0.0.1/ on port " + port);
 });
-
