@@ -3,7 +3,7 @@
 
 ## DEMO
 
-Currenlty this is [hosted on heroku](https://google-stocks.herokuapp.com/), feel free to use it! 
+Currenlty this is [hosted on heroku](https://stocksymbols.herokuapp.com/?code=BKK:SET), feel free to use it! 
 
 ## Features
 
@@ -58,3 +58,5 @@ __TODO for the next versio:__
 * Next version will mostly get meanifuly attributes! [Currently it's just the spatting out what the API returns.]
 
 * Allow `codes` query param an array of `stockMarket:stockCode` values.
+
+* Call Index quote
