@@ -1,6 +1,6 @@
 var http = require('http');
 var url = require('url');
-var googleStocks = require('google-stocks');
+var googleStocks = require('google-finance');
 
 var server = http.createServer(function (request, resp) {
     var headers = {};
