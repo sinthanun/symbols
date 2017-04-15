@@ -14,8 +14,8 @@ var server = http.createServer(function (request, resp) {
     resp.writeHead(200, headers);
 
     var queryParams = url.parse(request.url, true).query;
-    console.log([queryParams['code']]);
-    googleStocks([queryParams['code']])
+    console.log([queryParams['symbol']]);
+    googleStocks([queryParams['symbol']])
         .then(data => resp.end(JSON.stringify(data)))
         .catch(error => resp.end(JSON.stringify({ error: error })));
 });
